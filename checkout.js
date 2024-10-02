@@ -1,11 +1,11 @@
 
 
 //testing - candle array -> local storage, delete later
-
 /*
-let premade = [{"cost": 420, "quantity": 2, "description": "skeletal spine, smells like pomegranates"},
-    {"cost":666.66, "quantity": 1, "description": "blue votive candle, smells of blueberries and bergamot"},
-    {"cost": 1999, "quantity": 45, "description": "tea candle, unscented"} 
+
+let premade = [{"name": "spooky", "cost": 420, "quantity": 2, "description": "skeletal spine, smells like pomegranates"},
+    {"name": "bloo", "cost":666.66, "quantity": 1, "description": "blue votive candle, smells of blueberries and bergamot"},
+    {"name": "candle", "cost": 1999, "quantity": 45, "description": "tea candle, unscented"} 
 ];
 
 const storeLocalStorage = function() {
@@ -26,12 +26,14 @@ const customLocalStorage = function() {
   
   customLocalStorage(custom);
 */
+
   
 
 //no items in cart, just provides error message, should provide link to home - maybe auto redirect?
-// Message displays properly, but code further down throws console error
-// cartTotal function calls line ~133 and ~185 (also the entire checkout button functionality)
-// don't be a fool and push checkout on an empty cart, lets call that one a feature
+
+//Yes I turned this whole page into a giant if else statement for an empty cart
+// to get rid of a console error that only showed up when the cart was empty.
+//the close bracket for the else statement is all the way down at the bottom.
 
 const cartTable = document.querySelector('#cart-table');
 
@@ -42,10 +44,10 @@ function noCandles () {
 
 };
 
+
 if (localStorage.getItem("premade") === null && localStorage.getItem("custom") === null){
 noCandles();
-
-};
+} else {
 
 
 
@@ -76,11 +78,12 @@ const createCart = function(candleArray) {
 
             description = ""
             
-            if (currentCandle.name != null) {
-              description = currentCandle.name
+
+             if (currentCandle.name != null) {
+              description = currentCandle.name + ": "
              };
              if (currentCandle.description != null) {
-             description = " " + currentCandle.description
+             description = description + " " + currentCandle.description
             };
              if(currentCandle.baseScent != null){
               description = description + "Base Scent: " + currentCandle.baseScent
@@ -220,3 +223,6 @@ const totalDialog = document.getElementById('total');
   };
 
 table.addEventListener('click', checkoutConfirm);
+
+//lol ending giant if else for empty cart, yolo
+};
