@@ -138,7 +138,7 @@ const cartTotal = function(array1, array2){
   for (let i = 0; i < array1.length; i++) {
     const currentCandle = array1[i];
 
-    total = total + array1[i].cost
+    total = total + (array1[i].cost * array1[i].quantity)
 
     
 
@@ -147,7 +147,7 @@ const cartTotal = function(array1, array2){
   for (let i = 0; i < array2.length; i++) {
     const currentCandle = array1[i];
 
-    total = total + array2[i].cost
+    total = total + (array2[i].cost * array2[i].quantity)
 
 
   };
