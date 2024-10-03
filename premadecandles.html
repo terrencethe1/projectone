@@ -11,53 +11,103 @@
   <body>
     <header class="main-header">
       <h1>🕯 Welcome to the Pre-made Candles section! 🕯 </h1>
-      <h4>Free shipping on orders over $50 USA only! ⛟ </h2>
+      <h2>Free shipping on orders over $50 USA only! ⛟ </h2>
     </header>
 
     <main>
+     
       <section class="card">
-        <header>Pumpkin Spice Candles</header>
+        <header id="pumpkinname">Pumpkin Spice Candles</header>
+        <p id="pumpkindesc">Pumpkin Spice Candles Description..</p>
         <img src="./assets/images/pumpkin.jpg" alt="pumpkin" />
-        <p>Price: $6</p>
-        <p>Qty:</p>
-        <p><input type="text" id="pumpkinqty" name="pumpkinqty" maxlength="2" size="2"></p>
+        <p>
+          Price:
+          <label id="pumpkinprice" for="pumpkinprice">$8</label>
+        </p>
+        <p>
+          Qty:
+          <input type="text" id="pumpkinqty" name="pumpkinqty" maxlength="2" size="2">
+          <button id="pumpkinadd">Add to Cart</button>
+        </p>
       </section>
+
       <section class="card">
-        <header>Diwali Festival Candles</header>
+        <header id="diwaliname">Diwali Festival Candles</header>
+        <p id="diwalidesc">Diwali Festival Candles Description...</p>
         <img src="./assets/images/Diwali.jpg" alt="diwali" />
-        <p>Price: $5</p>
-        <p>Qty:</p>
-        <p><input type="text" id="diwaliqty" name="diwaliqty" maxlength="2" size="2"></p>
+        <p>
+          Price:
+          <label id="diwaliprice" for="diwaliprice">$10</label>
+        </p>
+        <p>
+          Qty:
+          <input type="text" id="diwaliqty" name="diwaliqty" maxlength="2" size="2">
+          <button id="diwaliadd">Add to Cart</button>
+        </p>
       </section>
+
       <section class="card">
-        <header>Vanilla Candles</header>
+        <header id="vanillaname">Vanilla Candles</header>
+        <p id="vanilladesc">Vanilla Candles Description..</p>
         <img src="./assets/images/vanilla.jpg" alt="vanilla" />
-        <p>Price: $3</p>
-        <p>Qty:</p>
-        <p><input type="text" id="vanillaqty" name="vanillaqty" maxlength="2" size="2"></p>
+        <p>
+          Price:
+          <label id="vanillaprice" for="vanillaprice">$3</label>
+        </p>
+        <p>
+          Qty:
+          <input type="text" id="vanillaqty" name="vanillaqty" maxlength="2" size="2">
+          <button id="vanillaadd">Add to Cart</button>
+        </p>     
       </section>
+
       <section class="card">
-        <header>Birthday Candles</header>
+        <header id="birthdayname">Birthday Candles</header>
+        <p id="birthdaydesc">Birthday Candles Description..</p>
         <img src="./assets/images/birthday.jpg" alt="birthday" />
-        <p>Price: $8</p>
-        <p>Qty:</p>
-        <p><input type="text" id="birthdayqty" name="birthdayqty" maxlength="2" size="2"></p>
+        <p>
+          Price:
+          <label id="birthdayprice" for="birthdayprice">$15</label>
+        </p>
+        <p>
+          Qty:
+          <input type="text" id="birthdayqty" name="birthdayqty" maxlength="2" size="2">
+          <button id="birthdayadd">Add to Cart</button>
+        </p>
       </section>
+
       <section class="card">
-        <header>Lavender</header>
+        <header id="lavendername">Lavender</header>
+        <p id="lavenderdesc">Lavender Candles Description..</p>
         <img src="./assets/images/lavender.jpg" alt="lavender" />
-        <p>Price: $5</p>
-        <p>Qty:</p>
-        <p><input type="text" id="lavenderqty" name="lavenderqty" maxlength="2" size="2"></p>
+        <p>
+          Price:
+          <label id="lavenderprice" for="lavenderprice">$5</label>
+        </p>
+        <p>
+          Qty:
+          <input type="text" id="lavenderqty" name="lavenderqty" maxlength="2" size="2">
+          <button id="lavenderadd">Add to Cart</button>
+        </p>
       </section>
+
       <section class="card">
-        <header>Candle Jar set (100)</header>
+        <header id="candlesetname">Candle Jar set (100)</header>
+        <p id="candlesetdesc">Candle Jar Set Description..</p>
         <img src="./assets/images/candleset.jpg" alt="candleset" />
-        <p>Price: $200</p>
-        <p>Qty:</p>
-        <p><input type="text" id="candlejarqty" name="candlejarqty" maxlength="2" size="2"></p>
+        <p>
+          Price:
+          <label id="candlesetprice" for="candlesetprice">$200</label>
+        </p>
+        <p>
+          Qty:
+          <input type="text" id="candlesetqty" name="candlesetqty" maxlength="2" size="2">
+          <button id="candlesetadd">Add to Cart</button>
+        </p>
       </section>
+
     </main>
+    <script defer src="./assets/js/storagelogic.js" type="text/javascript"></script>
   </body>
 
 </html>
