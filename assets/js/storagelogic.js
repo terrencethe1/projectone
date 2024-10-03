@@ -119,8 +119,8 @@ function saveToLocalStorage(event){
     const premadecandlesObject = {
         name: name,
         description: description,
-        cost: cost,
-        quantity: qty   
+        cost: Number(cost.slice(1)),
+        quantity: Number(qty)
     };
     
 
