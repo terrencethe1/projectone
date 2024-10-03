@@ -1,8 +1,8 @@
 
 
 //testing - candle array -> local storage, delete later
-/*
 
+/*
 let premade = [{"name": "spooky", "cost": 420, "quantity": 2, "description": "skeletal spine, smells like pomegranates"},
     {"name": "bloo", "cost":666.66, "quantity": 1, "description": "blue votive candle, smells of blueberries and bergamot"},
     {"name": "candle", "cost": 1999, "quantity": 45, "description": "tea candle, unscented"} 
@@ -13,7 +13,7 @@ localStorage.setItem('premade', JSON.stringify(premade))};
 
 storeLocalStorage(premade);
 
-
+/*
 let custom = [{"cost":3333, "baseScent": "Vanilla", "quantity": 4, "choice1": "coconut", "choice2": "lavender"},
   {"cost":3.14, "baseScent": "Lavender", "quantity": 2, "choice1": "grass", "choice2": "cedarwood", "choice3": "moss"}
 
@@ -26,7 +26,6 @@ const customLocalStorage = function() {
   
   customLocalStorage(custom);
 */
-
   
 
 //no items in cart, just provides error message, should provide link to home - maybe auto redirect?
