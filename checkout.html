@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wax On Wax Off Shopping Cart</title>
+
+    <!-- css stylesheet, do something else with this later, just used the same as wk 3 challenge to get it sort of working-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+          <h1>Wax On, Wax Off</h1>
+        </header>
+        <div class="card">
+          <div class="card-header">
+           <h2>Shopping Cart</h2>
+          </div>
+          <div class="card-body">
+           <table>
+            <thead>
+              <tr>
+                <th>Quantity</th>
+                <th>Description</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="cart-table">
+            </tbody>
+           </table>
+          </div>
+          <div class="card-footer">
+            <button id="checkout" class="btn">Checkout</button>
+          </div>
+        </div>
+      </div>
+
+<!--Modal for checkout clearing-->
+      <dialog id="checkoutPopup">
+        <form method="dialog">
+          <p>Thanks for shopping at Wax On, Wax Off!</p>
+          <p>Your total is <strong id="total"></strong></p>
+          <button id="completeCheckout">Complete Checkout</button>
+        </form>
+      </dialog>
+    
+    <script src="./assets/js/checkout.js"></script>  
+</body>
+</html>
