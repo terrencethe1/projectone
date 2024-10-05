@@ -4,76 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Candles Page</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>🕯️Build Your Custom Candles🕯️</h1>
         <h4>Free shipping on orders over $50 USA only! ⛟ </h4>
+        <ul>
+            <li> <a href="checkout.html">Checkout</a></li>
+        </ul>
+
             <p>Explore our delightful selection of custom-made candles, crafted just for you! Choose from a variety of scents, sizes, and styles to create the perfect candle that suits your taste and ambiance. Whether you prefer calming lavender, refreshing citrus, or warm vanilla, our options allow you to personalize your experience. Ideal for home decor or thoughtful gifts, each candle is hand-poured with care to ensure quality and uniqueness. Illuminate your space with a candle that's truly your own!</p>
     </header>
+
     <main>
         <nav>
+            
+            <section class="card">
             <div class="products">
-                <section class="product">
-                    <img src="./assets/images/Vanilla-Candle.avif" alt="A lit vanilla scented candle on sand">
+                <section class="product" id="vanilla">
                     <h2>Vanilla</h2>
+                
+                    <img src="./assets/images/Vanilla-Candle.avif" alt="A lit vanilla scented candle on sand">
                     <p>A beloved fragrance, vanilla offers a warm and inviting aroma that resonates with many. Its versatility makes it an ideal base, effortlessly blending with a variety of scents, from floral notes to spicy undertones.</p>
                     <p>Starting Price: $13</p>
+                    <br>
                     <label>
-                    <input type="checkbox" name="scents" value="lavender">
+                    
+                    <input type="checkbox" id="vanilla-lavender" name="scents" value="lavender">
                     Lavender: The calming properties of lavender complement vanilla’s warmth, creating a soothing aroma perfect for relaxation.
                 </label><br>
+
                 <label>
-                    <input type="checkbox" name="scents" value="cinnamon">
+                    <input type="checkbox" id="vanilla-cinnamon" name="scents" value="cinnamon">
                     Cinnamon: Mixing vanilla with cinnamon results in a warm, comforting scent that evokes feelings of coziness, ideal for fall and winter.
                 </label><br>
+
                 <label>
-                    <input type="checkbox" name="scents" value="caramel">
+                    <input type="checkbox" id="vanilla-caramel" name="scents" value="caramel">
                     Caramel: Enhances the sweetness and adds a rich, dessert-like quality.
                 </label><br>
-                <button>Add to Cart</button>
+                <p>
+                    Qty:
+                    <input type="text" id="vanilla-qty" name="vanilla-qty" maxlength="2" size="2">
+                    <button>Add to Cart</button>
+                    <br>
             </section>
-            <section class="product">
-                <img src="./assets/images/lavender-candle.jpg" alt="A lit lavender scented candle surrounded by lavender flowers">
+        </section>
+
+            <section class="card">
+            <section class="product" id="lavender">
                 <h2>Lavender</h2>
+                <img src="./assets/images/lavender-candle.jpg" alt="A lit lavender scented candle surrounded by lavender flowers">
                 <p>Known for its calming and soothing properties, lavender is a popular choice for wellness-focused candles. It can be blended with other relaxing scents or invigorating notes for a balanced offering.</p>
                 <p>Starting Price: $13</p>
                 <label>
-                    <input type="checkbox" name="scents" value="chamomile">
+                    <input type="checkbox" id="lavender-chamomile" name="scents" value="chamomile">
                     Chamomile: Combining lavender with chamomile enhances the relaxing properties, perfect for promoting sleep and tranquility.
                 </label><br>
                 <label>
-                    <input type="checkbox" name="scents" value="sandalwood">
+                    <input type="checkbox" id="lavender-sandalwood" name="scents" value="sandalwood">
                     Sandalwood: The earthy richness of sandalwood complements lavender, creating a calming and grounding scent.
                 </label><br>
                 <label>
-                    <input type="checkbox" name="scents" value="ylang ylang">
+                    <input type="checkbox" id="lavender-ylang" name="scents" value="ylang ylang">
                     Ylang Ylang: Adds a sweet, exotic floral note that enhances the depth of lavender.
                 </label><br>
+                <p>
+                    Qty:
+                    <input type="text" id="lavender-qty" name="lavenderqty" maxlength="2" size="2">
+
                 <button>Add to Cart</button>
             </section>
-            <section class="product">
-                <img src="./assets/images/coconut-candle.webp" alt="A lit candle in a coconut shell">
+        </section>
+
+            <section class="card">
+            <section class="product" id="coconut">
                 <h2>Coconut</h2>
+                <img src="./assets/images/coconut-candle.webp" alt="A lit candle in a coconut shell">
                 <p>This tropical scent is creamy and refreshing, evoking feelings of warmth and relaxation. Coconut is perfect for blending with fruity or floral fragrances and can transport customers to a serene getaway.</p>
                 <p>Starting Price: $13</p>
                 <label>
-                    <input type="checkbox" name="scents" value="mango">
+                    <input type="checkbox" id="coconut-mango" name="scents" value="mango">
                     Mango: The juicy, exotic scent of mango pairs wonderfully with coconut for a bright, uplifting blend.
                 </label><br>
                 <label>
-                    <input type="checkbox" name="scents" value="pineapple">
+                    <input type="checkbox" id="coconut-pineapple" name="scents" value="pineapple">
                     Pineapple: This tropical duo creates a refreshing, fruity fragrance that’s perfect for summer vibes.
                 </label><br>
                 <label>
-                    <input type="checkbox" name="scents" value="jasmine">
+                    <input type="checkbox" id="coconut-jasmine" name="scents" value="jasmine">
                     Jasmine: Introduces a floral aspect that adds complexity and elegance.
                 </label><br>
+                <p>
+                    Qty:
+                    <input type="text" id="coconut-qty" name="coconutqty" maxlength="2" size="2">
                 <button>Add to Cart</button>
             </section>
+            </div>
         </div>
     </nav>
+    <script defer src="./assets/js/custom.js"></script>
+
         <footer>
             <p>&copy; 2024 Power Ranger's Wax On, Wax Off</p>
             </footer>

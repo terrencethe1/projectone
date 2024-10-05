@@ -39,7 +39,7 @@ const cartTable = document.querySelector('#cart-table');
 function noCandles () {
   const noCandles = document.createElement('p');
   noCandles.textContent = `Your cart is empty!`;
- cartTable.appendChild(noCandles);
+  cartTable.appendChild(noCandles);
 
 };
 
@@ -78,26 +78,26 @@ const createCart = function(candleArray) {
             description = ""
             
 
-             if (currentCandle.name != null) {
+            if (currentCandle.name != null) {
               description = currentCandle.name + ": "
-             };
-             if (currentCandle.description != null) {
-             description = description + " " + currentCandle.description
             };
-             if(currentCandle.baseScent != null){
+            if (currentCandle.description != null) {
+            description = description + " " + currentCandle.description
+            };
+            if(currentCandle.baseScent != null){
               description = description + "Base Scent: " + currentCandle.baseScent
-             };
-             if(currentCandle.choice1 != null){
+            };
+            if(currentCandle.choice1 != null){
               description = description + " Additional Scents: " + currentCandle.choice1
-             };
-             if(currentCandle.choice2 != null){
+            };
+            if(currentCandle.choice2 != null){
               description = description + ", " + currentCandle.choice2
-             };
-             if(currentCandle.choice3 != null){
+            };
+            if(currentCandle.choice3 != null){
               description = description + ", " + currentCandle.choice3
-             };
+            };
           
-             descriptionCell.textContent = description
+            descriptionCell.textContent = description
             
           
             
@@ -157,18 +157,18 @@ const cartTotal = function(array1, array2){
   // fills quantity and description table cells with "", would like to remove if time,
   // a quick google search didn't help - note to self ask Matteo
 
-   const quantityCell = document.createElement("td");
-   quantityCell.textContent = "";
-   newTableRow.append(quantityCell);
+  const quantityCell = document.createElement("td");
+  quantityCell.textContent = "";
+  newTableRow.append(quantityCell);
 
   
-   const descriptionCell = document.createElement("td");
+  const descriptionCell = document.createElement("td");
             description = ""
             newTableRow.append(descriptionCell);
 
 // end total line array fill
 
- const totalCell = document.createElement("td");
+  const totalCell = document.createElement("td");
 
   newTableRow.append(totalCell);
   totalCell.textContent = finalCartTotal = total.toLocaleString("en-US",{
@@ -204,12 +204,12 @@ const totalDialog = document.getElementById('total');
 
     totalDialog.innerText = finalCartTotal;
     
- 
+
 // checkout button modal functionality
 // I should implement a choice in popup where one choice doesn't delete arrays,
 //and doesn't redirect to index.html, didn't do it yet
 
- function closeModal(){
+function closeModal(){
   localStorage.removeItem('premade');
   localStorage.removeItem('custom');
   window.location.href = 'index.html';

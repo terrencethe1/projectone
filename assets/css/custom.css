@@ -1,66 +1,67 @@
 * {
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial;
+}
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-  }
-  
-  main {
+}
+
+main {
     display: flex;
     /* Forces elements to the next line if they don't fit */
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     margin-top: 2%;
     justify-content: space-between;
     padding: 60px;
-    background: #F8E6D2;
+    background: #F8E6D2 ;
     color: black;
     margin-top: 5%;
-  }
-  
-  .main-header {
+}
+
+.main-header {
     display: flex;
     /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 50px;
+    padding: 60px;
     background: #E3D6E8;
     color: white;
-  }
-  
-  .card {
-    flex: 1 0 0;
-    padding: 0px;
+}
+
+.card {
+    flex: 1 0 300px;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
     border-style: solid;
     border-width: 1px;
-  }
-  
-  .card header {
+}
+
+.card header {
     padding: 20px;
     background: #F5C1B6;
-    color: #4A4A4A ;
-  }
-  
-  .card img {
-    width: 100%;
-    min-width: 400px;
-  }
-  
-  .text-right {
-    text-align: right;
-  }
+    color: #4A4A4A;
+}
 
-  li {
+.card img {
+    width: 50%;
+    min-width: 400px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+li {
     display: inline;
     padding: 0px 20px;
-    text-decoration: none;
-  }
+    text-decoration: none
+}
 
-  button {
+button {
     padding: 10px 15px;
-    background-color: #B9E3D8;
+    background-color: #B9E3D8 ;
     color: black;
     border: none;
     cursor: pointer;
