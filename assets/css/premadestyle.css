@@ -52,3 +52,21 @@
     padding: 0px 20px;
     text-decoration: none;
   }
+
+  .smallbutton{
+    width:20px;
+    border:none;
+  }
+
+  .addtocart{
+    margin-left:10px;
+  }
+
+  .qtytxt{
+    /* border-width: 0px; */
+    /*border:none; */
+    /* outline:none; */
+    width:25px;
+  }
+
+ 
