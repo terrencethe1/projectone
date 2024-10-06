@@ -65,6 +65,9 @@ function saveToLocalStorage(event){
     event.preventDefault();
     const clickedbutton = event.target;
 
+    //disable button since update logic isn't in place yet
+    clickedbutton.disabled=true;
+
     //local variables to store data temporarily
     let name="";
     let description="";

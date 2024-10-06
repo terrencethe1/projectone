@@ -31,8 +31,10 @@
         </p>
         <p>
           Qty:
-          <input type="text" id="pumpkinqty" name="pumpkinqty" maxlength="2" size="2">
-          <button id="pumpkinadd">Add to Cart</button>
+          <button class="smallbutton" id="pumpkindecrement">-</button>
+          <input class="qtytxt" type="text" id="pumpkinqty" name="pumpkinqty" maxlength="2" size="2" value="1">
+          <button class="smallbutton" id="pumpkinincrement">+</button>
+          <button id="pumpkinadd" class="addtocart">Add to Cart</button>
         </p>
       </section>
 
@@ -46,7 +48,9 @@
         </p>
         <p>
           Qty:
-          <input type="text" id="diwaliqty" name="diwaliqty" maxlength="2" size="2">
+          <button class="smallbutton" id="diwalidecrement">-</button>
+          <input type="text" id="diwaliqty" name="diwaliqty" maxlength="2" size="2" class="qtytxt" value="1">
+          <button class="smallbutton" id="diwaliincrement">+</button>
           <button id="diwaliadd">Add to Cart</button>
         </p>
       </section>
@@ -61,7 +65,9 @@
         </p>
         <p>
           Qty:
-          <input type="text" id="vanillaqty" name="vanillaqty" maxlength="2" size="2">
+          <button class="smallbutton" id="vanilladecrement">-</button>
+          <input type="text" id="vanillaqty" name="vanillaqty" maxlength="2" size="2" class="qtytxt" value="1">
+          <button class="smallbutton" id="vanillaincrement">+</button>
           <button id="vanillaadd">Add to Cart</button>
         </p>     
       </section>
@@ -76,7 +82,9 @@
         </p>
         <p>
           Qty:
-          <input type="text" id="birthdayqty" name="birthdayqty" maxlength="2" size="2">
+          <button class="smallbutton" id="birthdaydecrement">-</button>
+          <input type="text" id="birthdayqty" name="birthdayqty" maxlength="2" size="2" class="qtytxt" value="1">
+          <button class="smallbutton" id="birthdayincrement">+</button>
           <button id="birthdayadd">Add to Cart</button>
         </p>
       </section>
@@ -91,7 +99,9 @@
         </p>
         <p>
           Qty:
-          <input type="text" id="lavenderqty" name="lavenderqty" maxlength="2" size="2">
+          <button class="smallbutton" id="lavenderdecrement">-</button>
+          <input type="text" id="lavenderqty" name="lavenderqty" maxlength="2" size="2" class="qtytxt" value="1">
+          <button class="smallbutton" id="lavenderincrement">+</button>
           <button id="lavenderadd">Add to Cart</button>
         </p>
       </section>
@@ -106,13 +116,16 @@
         </p>
         <p>
           Qty:
-          <input type="text" id="candlesetqty" name="candlesetqty" maxlength="2" size="2">
+          <button class="smallbutton" id="candlesetdecrement">-</button>
+          <input type="text" id="candlesetqty" name="candlesetqty" maxlength="2" size="2" class="qtytxt" value="1">
+          <button class="smallbutton" id="candlesetincrement">+</button>
           <button id="candlesetadd">Add to Cart</button>
         </p>
       </section>
 
     </main>
     <script defer src="./assets/js/storagelogic.js" type="text/javascript"></script>
+    <script defer src="./assets/js/commonlogic.js" type="text/javascript"></script>
   </body>
 
 </html>
