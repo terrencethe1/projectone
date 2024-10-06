@@ -20,15 +20,20 @@
             <section class="card">
             <div class="products">
                 <section class="product" id="vanilla">
-                    <h2>Vanilla</h2>
+                    <h2 id="vanillabasescent">Vanilla</h2>
                     <img src="./assets/images/Vanilla-Candle.avif" alt="A lit vanilla scented candle on sand">
-                    <p>A beloved fragrance, vanilla offers a warm and inviting aroma that resonates with many. Its versatility makes it an ideal base, effortlessly blending with a variety of scents, from floral notes to spicy undertones.</p>
-                    <p>Starting Price: $13</p>
+                    <p id="vanilladescription">A beloved fragrance, vanilla offers a warm and inviting aroma that resonates with many. Its versatility makes it an ideal base, effortlessly blending with a variety of scents, from floral notes to spicy undertones.</p>
+                    <!-- <p id="vanillaprice">Starting Price: $13</p> -->
+                    <p>
+                        Starting Price:
+                        <label id="vanillaprice" for="vanillaprice">$13</label>
+                    </p>
                     <br>
                     <label>
                     <input type="checkbox" id="vanilla-lavender" name="scents" value="lavender">
                     Lavender: The calming properties of lavender complement vanilla’s warmth, creating a soothing aroma perfect for relaxation.
-                </label><br>
+                    </label>
+                    <br>
                 <label>
                     <input type="checkbox" id="vanilla-cinnamon" name="scents" value="cinnamon">
                     Cinnamon: Mixing vanilla with cinnamon results in a warm, comforting scent that evokes feelings of coziness, ideal for fall and winter.
@@ -49,7 +54,12 @@
                 <h2>Lavender</h2>
                 <img src="./assets/images/lavender-candle.jpg" alt="A lit lavender scented candle surrounded by lavender flowers">
                 <p>Known for its calming and soothing properties, lavender is a popular choice for wellness-focused candles. It can be blended with other relaxing scents or invigorating notes for a balanced offering.</p>
-                <p>Starting Price: $13</p>
+                <!--<p>Starting Price: $13</p> -->
+                <p>
+                    Starting Price:
+                    <label id="lavenderprice" for="lavenderprice">$13</label>
+                </p>
+
                 <label>
                     <input type="checkbox" id="lavender-chamomile" name="scents" value="chamomile">
                     Chamomile: Combining lavender with chamomile enhances the relaxing properties, perfect for promoting sleep and tranquility.
