@@ -27,18 +27,18 @@ function addToCart(productId, qty)
 
 function storeLocalStorage(customcandlesObject) {
     customcandlesDataArray.push({
-         baseScent: customcandlesObject.baseScent,
-         cost: customcandlesObject.cost,
-         quantity:customcandlesObject.quantity,
-         choice1:customcandlesObject.choice1,
-         choice2:customcandlesObject.choice2,
-         choice3:customcandlesObject.choice3
-         }
-     );
+        baseScent: customcandlesObject.baseScent,
+        cost: customcandlesObject.cost,
+        quantity:customcandlesObject.quantity,
+        choice1:customcandlesObject.choice1,
+        choice2:customcandlesObject.choice2,
+        choice3:customcandlesObject.choice3
+        }
+    );
      //Store in Local Storage
-     localStorage.setItem('custom',JSON.stringify(customcandlesDataArray));
-     return;
-   }
+    localStorage.setItem('custom',JSON.stringify(customcandlesDataArray));
+    return;
+}
 
 // Function to handle add to cart
 function handleAddToCart(event) {
@@ -47,11 +47,11 @@ function handleAddToCart(event) {
     let choice3='';
 
     const productSection = event.target.closest('.product');
-    const productId = productSection.querySelector('h2').innerText; // Get product name
+    const productId = productSection.querySelector('header').innerText; // Get product name
     const qty = parseInt(productSection.querySelector('input[type="text"]').value) || 1; // Get quantity
-   
+
     const productprice = productSection.querySelector('label').innerText;
-     
+    
     if (document.getElementById("vanilla-lavender").checked){
         choice1 = document.getElementById("vanilla-lavender").value;
     }
@@ -63,7 +63,7 @@ function handleAddToCart(event) {
     if (document.getElementById("vanilla-caramel").checked){
         choice3 = document.getElementById("vanilla-caramel").value;
     }
- 
+
             
     if (qty < 1) {
         alert('Please select a quantity greater than zero.');
