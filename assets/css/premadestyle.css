@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 60px;
-    background: #6187ac;
+    background:rgb(44, 44, 44);
     color: #d8c4c4;
   }
   
@@ -34,7 +34,7 @@
   
   .card header {
     padding: 20px;
-    background: #6d7a21;
+    background:  rgb(244, 193, 10); /* #6d7a21; */
     color: #fff;
   }
   
@@ -69,4 +69,16 @@
     width:25px;
   }
 
- 
+  .text-center {
+    text-align: center;
+  }
+
+  h1{
+    color: rgb(244, 193, 10);
+    font-style: italic;
+  }
+
+  footer{
+    background:rgb(44, 44, 44);
+    color: rgb(244, 193, 10);
+  }
