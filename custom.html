@@ -9,12 +9,16 @@
 <body>
     <header class="main-header">
         <h1>🕯️Build Your Custom Candles🕯️</h1>
-        <h4>Free shipping on orders over $50 USA only! ⛟ </h4>
+        <marquee behavior="scroll" direction="right">
+            Free shipping on orders over $50 USA only! ⛟
+        </marquee>
+        <section class="links" id="links">
         <ul>
             <li> <a href="index.html">HOME</a></li>
             <li> <a href="premadecandles.html">PREMADE CANDLES</a></li>
             <li> <a href="checkout.html">CHECKOUT</a></li>
         </ul>
+    </section>
             <p>Explore our delightful selection of custom-made candles, crafted just for you! Choose from a variety of scents, sizes, and styles to create the perfect candle that suits your taste and ambiance. Whether you prefer calming lavender, refreshing citrus, or warm vanilla, our options allow you to personalize your experience. Ideal for home decor or thoughtful gifts, each candle is hand-poured with care to ensure quality and uniqueness. Illuminate your space with a candle that's truly your own!</p>
     </header>
     <main>
@@ -22,7 +26,7 @@
             <section class="card">
             <div class="products">
                 <section class="product" id="vanilla">
-                    <h2 id="vanillabasescent">Vanilla</h2>
+                    <header id="vanillabasescent">Vanilla</header>
                     <img src="./assets/images/Vanilla-Candle.avif" alt="A lit vanilla scented candle on sand">
                     <p id="vanilladescription">A beloved fragrance, vanilla offers a warm and inviting aroma that resonates with many. Its versatility makes it an ideal base, effortlessly blending with a variety of scents, from floral notes to spicy undertones.</p>
                     <!-- <p id="vanillaprice">Starting Price: $13</p> -->
@@ -53,7 +57,7 @@
         </section>
             <section class="card">
             <section class="product" id="lavender">
-                <h2>Lavender</h2>
+                <header>Lavender</header>
                 <img src="./assets/images/lavender-candle.jpg" alt="A lit lavender scented candle surrounded by lavender flowers">
                 <p>Known for its calming and soothing properties, lavender is a popular choice for wellness-focused candles. It can be blended with other relaxing scents or invigorating notes for a balanced offering.</p>
                 <!--<p>Starting Price: $13</p> -->
@@ -82,7 +86,7 @@
         </section>
             <section class="card">
             <section class="product" id="coconut">
-                <h2>Coconut</h2>
+                <header>Coconut</header>
                 <img src="./assets/images/coconut-candle.webp" alt="A lit candle in a coconut shell">
                 <p>This tropical scent is creamy and refreshing, evoking feelings of warmth and relaxation. Coconut is perfect for blending with fruity or floral fragrances and can transport customers to a serene getaway.</p>
                 <p>Starting Price: $13</p>
@@ -106,10 +110,10 @@
             </div>
         </div>
     </nav>
-    <script defer src="./assets/js/custom.js"></script>
-        <footer>
-            <p>&copy; 2024 Power Ranger's Wax On, Wax Off</p>
-            </footer>
+    <script defer src="./assets/js/custom.js"></script>       
+            <footer class="text-center">
+                &copy; Power Ranger's Wax On, Wax Off 2024
+            </footer>           
         </main>
     </body>
 </html>

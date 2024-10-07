@@ -5,14 +5,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
+
 main {
     display: flex;
     /* Forces elements to the next line if they don't fit */
     flex-wrap:wrap;
     margin-top: 2%;
-    justify-content: space-between;
-    padding: 60px;
-    background: #F8E6D2 ;
     color: black;
     margin-top: 5%;
 }
@@ -21,12 +19,20 @@ main {
     /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
     justify-content: space-between;
+    justify-content: center; /* Center elements horizontally */
+    align-items: center;
     padding: 60px;
-    background: #E3D6E8;
-    color: white;
+    background: rgb(44, 44, 44);
+    color: #d8c4c4;
 }
+.links {
+    margin-left: auto; /* Pushes the links section to the right */
+    margin-top: 20px; /* Optional: adds some space from the top */
+    padding: 10px; /* Adds space around the items */
+}
+
 .card {
-    flex: 1 0 300px;
+    flex: 1 0 0;
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -35,11 +41,12 @@ main {
 }
 .card header {
     padding: 20px;
-    background: #F5C1B6;
-    color: #4A4A4A;
+margin-bottom: 16px;
+    background: rgb(244, 193, 10);
+    color: #fff;
 }
 .card img {
-    width: 50%;
+    width: 100%;
     min-width: 400px;
 }
 .text-right {
@@ -52,7 +59,7 @@ li {
 }
 button {
     padding: 10px 15px;
-    background-color: #B9E3D8 ;
+    background-color: gray ;
     color: black;
     border: none;
     cursor: pointer;
@@ -60,4 +67,17 @@ button {
 }
 button:hover {
     background-color: whitesmoke; /* Slightly darker on hover */
+}
+.text-center {
+    text-align: center;
+}
+
+h1{
+    color: rgb(244, 193, 10);
+    font-style: italic;
+}
+
+footer{
+    background:rgb(44, 44, 44);
+    color: rgb(244, 193, 10);
 }
