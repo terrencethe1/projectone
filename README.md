@@ -17,6 +17,5 @@ Images:
 
 ![shoppingcart](/assets/images/readme_screenshots/project1shoppingcart.png)
 
-
 Link: 
 [Wax On, Wax Off Homepage](https://terrencethe1.github.io/wax-on-wax-off/index.html)
