@@ -7,6 +7,16 @@ Wax On Wax Off is an online business that sells custom and premade scented candl
 Technologies used:
  HTML, CSS, Bootstrap, Tailwind CSS FWs & JavaScript
 
+Images:
+
+![index](/assets/images/readme_screenshots/project1home.png)
+
+![custom](/assets/images/readme_screenshots/project1custom.png)
+
+![premade](/assets/images/readme_screenshots/project1premade.png)
+
+![shoppingcart](/assets/images/readme_screenshots/project1shoppingcart.png)
+
 
 Link: 
 [Wax On, Wax Off Homepage](https://terrencethe1.github.io/wax-on-wax-off/index.html)
