@@ -9,14 +9,13 @@ Technologies used:
 
 Images:
 
-![index](/assets/images/readme_screenshots/project1home)
+![index](/assets/images/readme_screenshots/project1home.png)
 
-![custom](/assets/images/readme_screenshots/project1custom)
+![custom](/assets/images/readme_screenshots/project1custom.png)
 
-![premade](/assets/images/readme_screenshots/project1premade)
+![premade](/assets/images/readme_screenshots/project1premade.png)
 
-![shoppingcart](/assets/images/readme_screenshots/project1shoppingcart)
-
+![shoppingcart](/assets/images/readme_screenshots/project1shoppingcart.png)
 
 Link: 
 [Wax On, Wax Off Homepage](https://terrencethe1.github.io/wax-on-wax-off/index.html)
